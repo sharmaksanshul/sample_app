@@ -11,3 +11,35 @@ anshul:
   name: anshul
   email: anshaishan222@gmail.com
   password_digest: <%= User.digest('anshul') %>
+
+amit:
+  name: amit
+  email: amitaggrawal@gmail.com
+  password_digest: <%= User.digest('amitamit') %>
+
+michael:
+  name: Example User
+  email: example@railstutorial.org
+  password_digest: <%= User.digest('foobar') %>
+  admin: true
+archer:
+  name: Sterling Archer
+  email: duchess@example.gov
+  password_digest: <%= User.digest('foobar') %>
+
+lana:
+  name: Lana Kane
+  email: hands@example.gov
+  password_digest: <%= User.digest('foobar') %>
+
+malory:
+  name: Malory Archer
+  email: boss@example.gov
+  password_digest: <%= User.digest('foobar') %>
+
+<% 30.times do |n| %>
+user_<%= n %>:
+  name:  <%= "User #{n}" %>
+  email: <%= "user-#{n}@example.com" %>
+  password_digest: <%= User.digest('foobar') %>
+<% end %> 
