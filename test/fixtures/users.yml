@@ -10,7 +10,7 @@
 anshul:
   name: anshul
   email: anshaishan222@gmail.com
-  password_digest: <%= User.digest('anshul') %>
+  password_digest: <%= User.digest('foobar') %>
   activated: true
   activated_at: <%= Time.zone.now %>
 

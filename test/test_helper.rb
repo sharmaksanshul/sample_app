@@ -24,19 +24,19 @@ class ActionDispatch::IntegrationTest
 
   # Log in as a particular user.
   
-  def log_in_as(user, password:'anshul' , remember_me: '1')
-
-
-    post login_path, params: { session: { email: user.email,
-                                          password: "anshul",
-                                          remember_me: remember_me } } 
-  end
-
-   def log_in_asa(user, password:'anshul' , remember_me: '1')
+  def log_in_as(user, password:'foobar' , remember_me: '1')
 
 
     post login_path, params: { session: { email: user.email,
                                           password: "foobar",
                                           remember_me: remember_me } } 
   end
+
+  #  def log_in_asa(user, password:'anshul' , remember_me: '1')
+
+
+  #   post login_path, params: { session: { email: user.email,
+  #                                         password: "foobar",
+  #                                         remember_me: remember_me } } 
+  # end
 end
