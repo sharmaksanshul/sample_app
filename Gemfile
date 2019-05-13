@@ -12,7 +12,7 @@ gem 'will_paginate',           '3.1.7'
 gem 'bootstrap-will_paginate', '1.0.0'
 gem 'rails-controller-testing'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
 gem 'carrierwave',             '1.2.2'
 gem 'mini_magick',             '4.7.0'
  gem 'rmagick', '~> 3.1'
@@ -51,6 +51,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+    gem 'sqlite3', '1.3.13'
+
 end
 
 group :development do
