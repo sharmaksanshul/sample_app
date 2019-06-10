@@ -2,3 +2,4 @@
              html: { method: :delete }) do |f| %>
   <%= f.submit "Unfollow", class: "btn" %>
 <% end %>
+<%= link_to 'unfollow',relationship_path, method: :delete  %>
